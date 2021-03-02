@@ -4,7 +4,7 @@
     "slug": "Fira",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./app/assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "An app that allows a user to search a TV show and find information on the type of episodes are airing such as, filler or cannon episodes. Also will allow them to sign up and add a show to their favorite list. ",
+    "githubUrl": "https://github.com/brodrickgeorge/Fira"
   }
 }
