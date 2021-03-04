@@ -1,13 +1,15 @@
-import React from "react";
-import { SafeAreaView, StyleSheet, Text, Image, View } from "react-native";
-import AppButton from "./app/components/AppButton";
-import ViewImageScreen from "./app/screens/ViewImageScreen";
-import WelcomeScreen from "./app/screens/WelcomeScreen";
+import React, { useState } from "react";
 
-import Card from "./app/components/Card";
-import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
-import MessagesScreen from "./app/screens/MessagesScreen";
+import { Switch, Text, TextInput } from "react-native";
+import AppTextInput from "./app/components/AppTextInput";
+import Screen from "./app/components/Screen";
 
 export default function App() {
-  return <MessagesScreen />;
+  const [isNew, setIsNew] = useState(false);
+
+  return (
+    <Screen>
+      <Switch value={isNew} onValueChange={(newValue) => setIsNew(newValue)} />
+    </Screen>
+  );
 }
